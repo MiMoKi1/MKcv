@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle King's CV</title>
+    <link rel="icon" type="image/png" href="favicon-16x16.png"> <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+        }
+
+        h1 {
+            margin-top: 10px;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .skills, .education {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer img {
+            width: 14px;
+            height: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="mking-logo.png" alt="Michelle King's Logo">
+    <h1>Michelle King</h1>
+    <p>Email: <a href="mailto:MichelleKing1@proton.me">MichelleKing1@proton.me</a></p>
+    <p>Portfolio: <a href="https://michellemking.wordpress.com/portfolio-projects/">michellemking.wordpress.com</a></p>
+</header>
+
+<section>
+    <h2>Founder - Tech Palette Mentor</h2>
+    <p>
+        Tech Palette Mentor is software I developed with a full-stack approach, handling frontend, backend, and QA testing.
+        I successfully brought this software to market, integrating Stripe checkout for smooth transactions.
+        The web app offers a blending function that calculates colours to blend from paint hex values, helping artists recreate uploaded images with experimental ease.
+    </p>
+</section>
+
+<section class="education">
+    <h2>Education</h2>
+    <ul>
+        <li>Hibernia College - HDip Arts in Primary Education Teaching, 2011</li>
+        <li>University of Limerick - Bachelor of Computer Science: IT, 2005</li>
+        <li>Google Data Analytics Cert, 2023</li>
+        <li>Google UX Design Cert, 2022</li>
+    </ul>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>SQL, Postgresql</li>
+        <li>Excel, QA, Manual Testing</li>
+        <li>Data Cleaning & Organisation</li>
+        <li>Tableau Visualisation</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Work Experience</h2>
+    <ul>
+        <li><strong>Software Developer & Testing</strong> - Tech Palette Mentor, 2004-present</li>
+        <li><strong>Analyst</strong> - Coding Ireland, Aug-Oct 2023 (contract) - Manual testing of website assets</li>
+        <li><strong>Primary School Teacher</strong> - Dept. of Education, Ireland, 2009-2023</li>
+        <li><strong>Financial Analyst</strong> - Northern Trust Corporation, Dublin, 2007-2009</li>
+        <li><strong>Accounts Payable Analyst</strong> - Mitsui Sumitomo Insurance, Dublin, 2005-2007</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Internships</h2>
+    <ul>
+        <li><strong>IT Helpdesk</strong> - Thomson ISI, 1 year, Limerick</li>
+        <li><strong>Database Administrator</strong> - Dell (EMC), 2 summers</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Michelle King</p>
+    <p>
+        <a href="https://www.instagram.com/techpalettementor"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://www.pinterest.com/techmentorpalette/"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="https://www.linkedin.com/company/techpalettementor/"><img src="linkedin.png" alt="LinkedIn"></a>
+    </p>
+</footer>
+
+</body>
+</html>
