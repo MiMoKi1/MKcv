@@ -3,151 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon-16x16.png"> <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> <!-- Font -->
     <title>Michelle King's CV</title>
-    <link rel="icon" type="image/png" href="favicon-16x16.png"> <!-- Favicon -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts -->
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            background-color: #FFFFFF;
+            color: #333;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            line-height: 1.6;
+            font-size: 14px;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        header img {
-            width: 100px;
-            height: auto;
-        }
-
-        h1 {
-            margin-top: 10px;
-            font-size: 28px;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-size: 22px;
+        h1, h2 {
             color: #555;
-            margin-bottom: 10px;
         }
 
+        /* Header styles */
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        #logo {
+            width: 100px;
+        }
+
+        /* Section styles */
         section {
             margin-bottom: 40px;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 5px;
-        }
-
-        .skills, .education {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .contact {
-            text-align: center;
-        }
-
-        a {
-            color: #555;
-            text-decoration: none;
-        }
-
+        /* Footer styles */
         footer {
             text-align: center;
-            padding: 20px 0;
-            background-color: #333;
-            color: white;
+            padding: 10px 0;
+            background-color: #f8f8f8; /* Change footer color */
         }
 
         footer a {
-            color: white;
+            color: #333;
             text-decoration: none;
             margin: 0 10px;
+            font-size: 14px;
+            transition: color 0.3s ease, font-weight 0.3s ease;
         }
 
-        footer img {
-            width: 14px;
-            height: 14px;
+        footer a:hover {
+            font-weight: bold;
+        }
+
+        /* Menu styles */
+        #menu-icon {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        #menu-icon:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            #content-video {
+                flex-direction: column; /* Stack vertically on smaller screens */
+                align-items: center; /* Center items */
+            }
+
+            #content, #video {
+                width: 100%; /* Full width on smaller screens */
+                margin-right: 0; /* Reset margin */
+            }
+
+            #purchase {
+                width: 100%; /* Full width for purchase section */
+                text-align: center; /* Center align on smaller screens */
+            }
         }
     </style>
 </head>
 <body>
 
+<!-- Header with logo and menu icon -->
+<div id="header">
+    <a href="index.html">
+        <img id="logo" src="mking-logo.png" alt="Tech Palette Mentor Logo" style="background-color: transparent;">
+    </a>
+    <img id="menu-icon" src="menu.png" alt="Menu Icon">
+</div>
+
 <header>
-    <img src="mking-logo.png" alt="Michelle King's Logo">
     <h1>Michelle King</h1>
-    <p>Email: <a href="mailto:MichelleKing1@proton.me">MichelleKing1@proton.me</a></p>
-    <p>Portfolio: <a href="https://michellemking.wordpress.com/portfolio-projects/">michellemking.wordpress.com</a></p>
+    <h2>Founder - Tech Palette Mentor</h2>
+    <p>
+        A software I developed frontend and backend, QA tested and brought to market with a Stripe checkout. This software is deployed as a web app with a frontend blending function that calculates the colours to blend from a list of paint names, hex, and pigment codes, that will replicate the clicked hex values from the user's uploaded picture. It is colour theory - done for you and makes painting techy and experimental. 
+        <a href="https://mimoki1.github.io/TechPaletteMentor/index.html">Tech Palette Mentor</a>
+    </p>
 </header>
 
 <section>
-    <h2>Founder - Tech Palette Mentor</h2>
-    <p>
-        Tech Palette Mentor is software I developed with a full-stack approach, handling frontend, backend, and QA testing.
-        I successfully brought this software to market, integrating Stripe checkout for smooth transactions.
-        The web app offers a blending function that calculates colours to blend from paint hex values, helping artists recreate uploaded images with experimental ease.
-    </p>
-</section>
-
-<section class="education">
-    <h2>Education</h2>
+    <h2>EDUCATION</h2>
     <ul>
-        <li>Hibernia College - HDip Arts in Primary Education Teaching, 2011</li>
-        <li>University of Limerick - Bachelor of Computer Science: IT, 2005</li>
+        <li>Hibernia College, HDip in Arts in Primary Education Teaching, 2011</li>
+        <li>University of Limerick, Bachelor of Computer Science: IT, 2005</li>
         <li>Google Data Analytics Cert, 2023</li>
         <li>Google UX Design Cert, 2022</li>
-    </ul>
-</section>
-
-<section class="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>SQL, Postgresql</li>
-        <li>Excel, QA, Manual Testing</li>
-        <li>Data Cleaning & Organisation</li>
-        <li>Tableau Visualisation</li>
+        <li>ISTQB Certification, 2024</li> <!-- Added ISTQB certification -->
     </ul>
 </section>
 
 <section>
-    <h2>Work Experience</h2>
+    <h2>SKILLS</h2>
     <ul>
-        <li><strong>Software Developer & Testing</strong> - Tech Palette Mentor, 2004-present</li>
-        <li><strong>Analyst</strong> - Coding Ireland, Aug-Oct 2023 (contract) - Manual testing of website assets</li>
-        <li><strong>Primary School Teacher</strong> - Dept. of Education, Ireland, 2009-2023</li>
-        <li><strong>Financial Analyst</strong> - Northern Trust Corporation, Dublin, 2007-2009</li>
-        <li><strong>Accounts Payable Analyst</strong> - Mitsui Sumitomo Insurance, Dublin, 2005-2007</li>
+        <li>SQL, PostgreSQL</li>
+        <li>Excel</li>
+        <li>QA Manual Testing</li>
+        <li>Data Analysis and Visualisation</li>
     </ul>
 </section>
 
 <section>
-    <h2>Internships</h2>
+    <h2>WORK EXPERIENCE</h2>
+
+    <h3>Founder - Tech Palette Mentor</h3>
+    <p>2004 - Present</p>
     <ul>
-        <li><strong>IT Helpdesk</strong> - Thomson ISI, 1 year, Limerick</li>
-        <li><strong>Database Administrator</strong> - Dell (EMC), 2 summers</li>
+        <li>Conducted comprehensive QA testing of the web application, ensuring functionality and performance met industry standards.</li>
+        <li>Analysed and interpreted complex datasets to identify trends and insights.</li>
+        <li>Utilised PostgreSQL to perform data cleaning, and used Tableau for visualisation and reporting.</li>
+        <li>Delivered actionable recommendations to improve decision-making processes.</li>
+    </ul>
+
+    <h3>Analyst - Coding Ireland</h3>
+    <p>Aug 2023 to Oct 2023 (Contract)</p>
+    <ul>
+        <li>Conducted manual testing of the website and its assets, identifying and documenting defects.</li>
+        <li>Collaborated with developers to resolve issues and improve overall user experience.</li>
+    </ul>
+
+    <h3>Primary School Teacher - Department of Education</h3>
+    <p>2009 - 2023</p>
+    <ul>
+        <li>Mainstream and special education teaching across all levels of Irish primary schools.</li>
+        <li>Applied knowledge and experience to create a stimulating and inclusive environment for students.</li>
+    </ul>
+
+    <h3>Financial Analyst - Northern Trust Corporation, ISFC, Dublin</h3>
+    <p>2007 - 2009</p>
+    <ul>
+        <li>Wrote the financial statements of our main stakeholders to regulatory bodies.</li>
+        <li>Worked with KPMG auditors on financial reports.</li>
+        <li>Streamlined workflows through Excel macros and implemented new software solutions for efficient data analysis.</li>
+    </ul>
+
+    <h3>Accounts Payable Analyst - Mitsui Sumitomo Insurance, IFSC, Dublin</h3>
+    <p>2005 - 2007</p>
+    <ul>
+        <li>Managed and analysed financial processes within the accounts payable department.</li>
+        <li>Wrote procedural documents to facilitate knowledge sharing of new software.</li>
+        <li>Developed SQL queries for data cleaning and organisation.</li>
+        <li>Performed data entry of invoices and ensured timely payments.</li>
     </ul>
 </section>
 
+<section>
+    <h2>INTERNSHIPS</h2>
+
+    <h3>IT Helpdesk - Thomson ISI (Institute for Scientific Information), Limerick</h3>
+    <p>1 year</p>
+    <ul>
+        <li>Responsible for network monitoring, IT support, and troubleshooting during my Bachelor of Science degree internship.</li>
+        <li>Received commendation for performance and continued to work with the company post-internship.</li>
+    </ul>
+
+    <h3>Database Administrator - Dell (EMC)</h3>
+    <p>2 summers</p>
+    <ul>
+        <li>Gained hands-on experience in building computers and conducting quality control on the factory floor.</li>
+        <li>Transitioned to office work, maintaining one of the company's research databases.</li>
+    </ul>
+</section>
+
+<!-- Footer -->
 <footer>
-    <p>&copy; 2024 Michelle King</p>
+    <p>&copy; 2024 Michelle King. All rights reserved.</p>
     <p>
-        <a href="https://www.instagram.com/techpalettementor"><img src="instagram.png" alt="Instagram"></a>
-        <a href="https://www.pinterest.com/techmentorpalette/"><img src="pinterest.png" alt="Pinterest"></a>
-        <a href="https://www.linkedin.com/company/techpalettementor/"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="TermsandConditions.html">T&C</a> |
+        <a href="PrivacyPolicy.html">Privacy Policy</a> |
+        <a href="ContactUs.html">Contact Us</a> |
+        <a href="index.html">Back to Home</a> |
+        <a href="BuyNow.html">Buy</a> |
+        <a href="app.html">Web App</a> |
+        <a href="https://mimoki1.github.io/TechPaletteMentor/index.html">Tech Palette Mentor</a>
+    </p>
+    <p>
+        <a href="https://www.linkedin.com/in/michelleking1/"><img src="icons8-linkedin-48.png" alt="LinkedIn" style="width:24px;height:24px;"></a>
     </p>
 </footer>
+
+<!-- Menu functionality -->
+<script>
+    const menuIcon = document.getElementById("menu-icon");
+    const dropdown = document.querySelector(".dropdown");
+
+    menuIcon.addEventListener("click", () => {
+        menuIcon.classList.toggle("active");
+        dropdown.classList.toggle("active"); // Toggling active class to control dropdown visibility
+    });
+</script>
 
 </body>
 </html>
