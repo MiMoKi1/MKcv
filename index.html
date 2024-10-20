@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon-16x16.png"> <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="favicon-16x16.png"> <!-- Favicon -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> <!-- Font -->
     <title>Michelle King's CV</title>
     <style>
@@ -27,7 +27,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background-color: #f0f0f0;
+            background-color: #FFFFFF;
         }
 
         #logo {
@@ -66,12 +66,7 @@
             transition: transform 0.3s ease, filter 0.3s ease;
         }
 
-        #menu-icon:hover {
-            transform: scale(1.1);
-            filter: brightness(1.2);
-        }
-
-        /* Media queries for responsiveness */
+              /* Media queries for responsiveness */
         @media (max-width: 768px) {
             #content-video {
                 flex-direction: column; /* Stack vertically on smaller screens */
@@ -97,7 +92,7 @@
     <a href="index.html">
         <img id="logo" src="mking-logo.png" alt="Tech Palette Mentor Logo" style="background-color: transparent;">
     </a>
-    <img id="menu-icon" src="menu.png" alt="Menu Icon">
+  
 </div>
 
 <header>
@@ -196,28 +191,15 @@
 <footer>
     <p>&copy; 2024 Michelle King. All rights reserved.</p>
     <p>
-        <a href="TermsandConditions.html">T&C</a> |
-        <a href="PrivacyPolicy.html">Privacy Policy</a> |
-        <a href="ContactUs.html">Contact Us</a> |
-        <a href="index.html">Back to Home</a> |
-        <a href="BuyNow.html">Buy</a> |
-        <a href="app.html">Web App</a> |
-        <a href="https://mimoki1.github.io/TechPaletteMentor/index.html">Tech Palette Mentor</a>
+
+              <a href="https://mimoki1.github.io/TechPaletteMentor/index.html">Tech Palette Mentor</a>
     </p>
     <p>
         <a href="https://www.linkedin.com/in/michelleking1/"><img src="icons8-linkedin-48.png" alt="LinkedIn" style="width:24px;height:24px;"></a>
     </p>
 </footer>
 
-<!-- Menu functionality -->
-<script>
-    const menuIcon = document.getElementById("menu-icon");
-    const dropdown = document.querySelector(".dropdown");
 
-    menuIcon.addEventListener("click", () => {
-        menuIcon.classList.toggle("active");
-        dropdown.classList.toggle("active"); // Toggling active class to control dropdown visibility
-    });
 </script>
 
 </body>
